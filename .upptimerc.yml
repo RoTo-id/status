@@ -1,0 +1,16 @@
+owner: RoTo-id
+repo: status
+sites:
+  - name: Maxine Platform
+    url: https://maxineplatform.com
+  - name: Maxine Shop (Printify)
+    url: https://maxineplatform.printify.me
+  - name: MedRemind Product Page
+    url: https://maxineplatform.com/products/maxine/
+status-website:
+  cname: false
+  baseUrl: /status
+  name: Maxine Platform Status
+i18n:
+  activeIncidents: Aktiva incidenter
+assignees: []
