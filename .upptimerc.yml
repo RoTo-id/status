@@ -1,14 +1,23 @@
 owner: RoTo-id
 repo: status
+# Only public endpoints. No application or database credentials are needed.
+secrets: []
+skipDeleteIssues: true
+skipDescriptionUpdate: true
+skipTopicsUpdate: true
+skipHomepageUpdate: true
 sites:
   - name: Maxine Platform
     url: https://maxineplatform.com
   - name: Maxine Shop (Printify)
     url: https://maxineplatform.printify.me
   - name: MedRemind Product Page
-    url: https://maxineplatform.com/products/maxine/
+    url: https://maxineplatform.com/products/medremind/
+  - name: Fyndmotorn Preview API
+    url: https://fyndmotorn-preview.fyndmotorn-infrastructure.workers.dev/api/health
+    expectedStatusCodes: [200]
+    __dangerous__body_down_if_text_missing: '"database":"connected"'
 status-website:
-  cname: false
   baseUrl: /status
   name: Maxine Platform Status
 assignees: []
