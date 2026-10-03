@@ -17,6 +17,12 @@ sites:
     url: https://fyndmotorn-preview.fyndmotorn-infrastructure.workers.dev/api/health
     expectedStatusCodes: [200]
     __dangerous__body_down_if_text_missing: '"database":"connected"'
+  # 503 whenever any collection source has had no successful run for more
+  # than SOURCE_STALE_HOURS (default 6 h). The body names the stale sources.
+  - name: Fyndmotorn Sources
+    url: https://fyndmotorn-preview.fyndmotorn-infrastructure.workers.dev/api/health/sources
+    expectedStatusCodes: [200]
+    __dangerous__body_down_if_text_missing: '"stale":[]'
 status-website:
   baseUrl: /status
   name: Maxine Platform Status
