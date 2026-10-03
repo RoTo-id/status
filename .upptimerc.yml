@@ -13,8 +13,8 @@ sites:
     url: https://maxineplatform.printify.me
   - name: MedRemind Product Page
     url: https://maxineplatform.com/products/medremind/
-  - name: Fyndmotorn Preview API
-    url: https://fyndmotorn-preview.fyndmotorn-infrastructure.workers.dev/api/health
+  - name: Fyndmotorn API
+    url: https://fyndmotorn.se/api/health
     expectedStatusCodes: [200]
     __dangerous__body_down_if_text_missing: '"database":"connected"'
 status-website:
