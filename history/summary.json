@@ -34,7 +34,7 @@
     "timeMonth": 141,
     "timeYear": 141,
     "dailyMinutesDown": {
-      "2026-10-08": 300,
+      "2026-10-08": 1219,
       "2026-10-07": 1440,
       "2026-10-06": 1440,
       "2026-10-05": 1440,
@@ -83,17 +83,19 @@
     "url": "https://fyndmotorn.se/api/health/sources",
     "icon": "https://icons.duckduckgo.com/ip3/fyndmotorn.se.ico",
     "slug": "fyndmotorn-sources",
-    "status": "up",
+    "status": "down",
     "uptime": "100.00%",
-    "uptimeDay": "100.00%",
+    "uptimeDay": "99.99%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 476,
-    "timeDay": 646,
-    "timeWeek": 476,
-    "timeMonth": 476,
-    "timeYear": 476,
-    "dailyMinutesDown": {}
+    "time": 470,
+    "timeDay": 542,
+    "timeWeek": 470,
+    "timeMonth": 470,
+    "timeYear": 470,
+    "dailyMinutesDown": {
+      "2026-10-08": 0
+    }
   }
 ]
